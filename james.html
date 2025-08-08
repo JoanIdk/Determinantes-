@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>James David Alegría</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>James — Determinantes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>James David Alegría</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Tipos de Determinantes</h2>
-            <ul>
-                <li>Artículos (el, la, los, las)</li>
-                <li>Demostrativos (este, esa, aquel)</li>
-                <li>Posesivos (mi, tu, su)</li>
-                <li>Numerales (uno, dos, primero)</li>
-                <li>Indefinidos (algún, ningún, varios)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Ejercicio</h2>
-            <p>Subraya los determinantes en la oración:</p>
-            <blockquote>"Mi perro encontró unos huesos en aquel jardín."</blockquote>
-            <p>Respuesta: <strong>Mi, unos, aquel</strong>.</p>
-        </section>
-        <section>
-            <h2>Video explicativo</h2>
-            <iframe src="https://www.youtube.com/embed/vZyWef1KLhE" allowfullscreen></iframe>
-        </section>
-    </main>
-    <footer>
-        <p>Proyecto de grado 10-2 - 2025</p>
-    </footer>
+  <header class="site-header small">
+    <div class="container">
+      <h1 class="logo">James David Alegría</h1>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="joan.html">Joan</a>
+        <a href="james.html" class="active">James</a>
+        <a href="pablo.html">Pablo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>Tipos de determinantes y cómo identificarlos</h2>
+    <ol>
+      <li><strong>Artículos:</strong> marcan género y número (el, la, los, las).</li>
+      <li><strong>Demostrativos:</strong> señalan (este, ese, aquel).</li>
+      <li><strong>Posesivos:</strong> indican posesión (mi, tus, su).</li>
+      <li><strong>Numerales:</strong> indican cantidad o posición (dos, tercero).</li>
+      <li><strong>Indefinidos:</strong> cantidad imprecisa (algunos, varios).</li>
+    </ol>
+
+    <section class="section-card">
+      <h3>Ejercicio interactivo</h3>
+      <p>Escribe los determinantes en la oración: <em>"Aquellos niños tenían dos globos."</em></p>
+      <input id="j-answer" placeholder="Escribe aquí">
+      <button id="j-check" class="btn">Comprobar</button>
+      <p id="j-result" class="result"></p>
+    </section>
+
+    <section class="section-card">
+      <h3>Video</h3>
+      <div class="video-thumb" data-video="https://www.youtube.com/embed/vZyWef1KLhE">
+        <img alt="video james" src="https://img.youtube.com/vi/vZyWef1KLhE/hqdefault.jpg">
+        <p>Tipos y ejemplos</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><a href="index.html">← Volver al inicio</a></div>
+  </footer>
+
+  <div id="videoModal" class="modal"><div class="modal-content"><button class="modal-close" id="modalClose">✕</button><div class="video-wrapper" id="videoWrapper"></div></div></div>
+  <script src="scripts.js"></script>
 </body>
 </html>
