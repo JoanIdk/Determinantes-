@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Pablo Andrés Perafan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pablo — Determinantes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Pablo Andrés Perafan</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Importancia de los Determinantes</h2>
-            <p>Los determinantes son esenciales porque aportan información sobre el sustantivo, como cantidad, posesión, cercanía o identidad.</p>
-        </section>
-        <section>
-            <h2>Ejercicio</h2>
-            <p>Escribe una oración usando tres determinantes diferentes.</p>
-            <p>Ejemplo: <em>Mi primo tiene aquellos juguetes nuevos.</em></p>
-        </section>
-        <section>
-            <h2>Video explicativo</h2>
-            <iframe src="https://www.youtube.com/embed/Ux8dTgJ2dGE" allowfullscreen></iframe>
-        </section>
-    </main>
-    <footer>
-        <p>Proyecto de grado 10-2 - 2025</p>
-    </footer>
+  <header class="site-header small">
+    <div class="container">
+      <h1 class="logo">Pablo Andrés Perafán</h1>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="joan.html">Joan</a>
+        <a href="james.html">James</a>
+        <a href="pablo.html" class="active">Pablo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>Por qué son importantes los determinantes</h2>
+    <p>Los determinantes permiten identificar y concretar el sustantivo en el contexto: cantidad, identidad, posesión, cercanía.</p>
+
+    <section class="section-card">
+      <h3>Actividad práctica</h3>
+      <p>Escribe una oración con un determinante demostrativo, uno posesivo y uno numeral.</p>
+      <textarea id="p-answer" rows="3" placeholder="Escribe tu oración aquí"></textarea>
+      <button id="p-check" class="btn">Revisar</button>
+      <p id="p-result" class="result"></p>
+    </section>
+
+    <section class="section-card">
+      <h3>Video</h3>
+      <div class="video-thumb" data-video="https://www.youtube.com/embed/Ux8dTgJ2dGE">
+        <img alt="video pablo" src="https://img.youtube.com/vi/Ux8dTgJ2dGE/hqdefault.jpg">
+        <p>Explicación y práctica</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><a href="index.html">← Volver al inicio</a></div>
+  </footer>
+
+  <div id="videoModal" class="modal"><div class="modal-content"><button class="modal-close" id="modalClose">✕</button><div class="video-wrapper" id="videoWrapper"></div></div></div>
+  <script src="scripts.js"></script>
 </body>
 </html>
