@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Joan David Ordóñez</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joan — Determinantes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Joan David Ordóñez</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Explicación de los Determinantes</h2>
-            <p>Los determinantes son palabras que se anteponen al sustantivo para determinarlo y concretar su significado.</p>
-        </section>
-        <section>
-            <h2>Ejercicio Interactivo</h2>
-            <p>Identifica los determinantes en esta frase:</p>
-            <blockquote>"Estos libros son más interesantes que aquellos."</blockquote>
-            <p>Respuesta: <strong>Estos, aquellos</strong>.</p>
-        </section>
-        <section>
-            <h2>Video explicativo</h2>
-            <iframe src="https://www.youtube.com/embed/5oZGhQkCdUs" allowfullscreen></iframe>
-        </section>
-    </main>
-    <footer>
-        <p>Proyecto de grado 10-2 - 2025</p>
-    </footer>
+  <header class="site-header small">
+    <div class="container">
+      <h1 class="logo">Joan David Ordóñez</h1>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="joan.html" class="active">Joan</a>
+        <a href="james.html">James</a>
+        <a href="pablo.html">Pablo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>¿Qué son los determinantes?</h2>
+    <p>Los determinantes acompañan al sustantivo para precisar su significado: cantidad, posesión, cercanía, identificación, etc.</p>
+
+    <section class="section-card">
+      <h3>Tipos principales</h3>
+      <ul>
+        <li><strong>Artículos:</strong> el, la, los, las</li>
+        <li><strong>Demostrativos:</strong> este, esa, aquellos</li>
+        <li><strong>Posesivos:</strong> mi, tu, su, nuestro</li>
+        <li><strong>Numerales:</strong> uno, dos, primero</li>
+        <li><strong>Indefinidos:</strong> algún, ningún, varios</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h3>Ejemplos explicados</h3>
+      <p><em>Este</em> libro — el determinante «este» indica cercanía respecto al hablante.</p>
+      <p><em>Mis</em> tareas — el determinante «mis» indica posesión (de quién son).</p>
+    </section>
+
+    <section class="section-card">
+      <h3>Video</h3>
+      <div class="video-thumb" data-video="https://www.youtube.com/embed/5oZGhQkCdUs">
+        <img alt="video joan" src="https://img.youtube.com/vi/5oZGhQkCdUs/hqdefault.jpg">
+        <p>Ver video explicativo</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><a href="index.html">← Volver al inicio</a></div>
+  </footer>
+
+  <div id="videoModal" class="modal"><div class="modal-content"><button class="modal-close" id="modalClose">✕</button><div class="video-wrapper" id="videoWrapper"></div></div></div>
+  <script src="scripts.js"></script>
 </body>
 </html>
