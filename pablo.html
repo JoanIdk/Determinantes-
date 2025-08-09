@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pablo — Determinantes</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header small">
-    <div class="container">
-      <h1 class="logo">Pablo Andrés Perafán</h1>
-      <nav class="nav">
-        <a href="index.html">Inicio</a>
-        <a href="joan.html">Joan</a>
-        <a href="james.html">James</a>
-        <a href="pablo.html" class="active">Pablo</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container content">
-    <h2>Por qué son importantes los determinantes</h2>
-    <p>Los determinantes permiten identificar y concretar el sustantivo en el contexto: cantidad, identidad, posesión, cercanía.</p>
-
-    <section class="section-card">
-      <h3>Actividad práctica</h3>
-      <p>Escribe una oración con un determinante demostrativo, uno posesivo y uno numeral.</p>
-      <textarea id="p-answer" rows="3" placeholder="Escribe tu oración aquí"></textarea>
-      <button id="p-check" class="btn">Revisar</button>
-      <p id="p-result" class="result"></p>
-    </section>
-
-    <section class="section-card">
-      <h3>Video</h3>
-      <div class="video-thumb" data-video="https://www.youtube.com/embed/Ux8dTgJ2dGE">
-        <img alt="video pablo" src="https://img.youtube.com/vi/Ux8dTgJ2dGE/hqdefault.jpg">
-        <p>Explicación y práctica</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pablo — Determinantes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header small">
+      <div class="container">
+        <h1 class="logo">Pablo Andrés Perafán</h1>
+        <nav class="nav">
+          <a href="index.html">Inicio</a>
+          <a href="joan.html">Joan</a>
+          <a href="james.html">James</a>
+          <a href="pablo.html" class="active">Pablo</a>
+        </nav>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <footer class="site-footer">
-    <div class="container"><a href="index.html">← Volver al inicio</a></div>
-  </footer>
+    <main class="container content">
+      <h2>Por qué son importantes los determinantes</h2>
+      <p>
+        Los determinantes permiten identificar y concretar el sustantivo en el
+        contexto: cantidad, identidad, posesión, cercanía.
+      </p>
 
-  <div id="videoModal" class="modal"><div class="modal-content"><button class="modal-close" id="modalClose">✕</button><div class="video-wrapper" id="videoWrapper"></div></div></div>
-  <script src="scripts.js"></script>
-</body>
+      <section class="section-card">
+        <h3>Actividad práctica</h3>
+        <p>
+          Escribe una oración con un determinante demostrativo, uno posesivo y
+          uno numeral.
+        </p>
+        <textarea
+          id="p-answer"
+          rows="3"
+          placeholder="Escribe tu oración aquí"
+        ></textarea>
+        <button id="p-check" class="btn">Revisar</button>
+        <p id="p-result" class="result"></p>
+      </section>
+
+      <section class="section-card">
+        <h3>Video</h3>
+        <div
+          class="video-thumb"
+          data-video="https://www.youtube.com/embed/wpsJ1C7XEoI?si=XCkdmfwukea0ZuT2"
+        >
+          <img
+            alt="video pablo"
+            src="https://media.gettyimages.com/id/1307786410/es/v%C3%ADdeo/bot%C3%B3n-de-reproducci%C3%B3n-plantilla-de-transmisi%C3%B3n-en-vivo-signo-rojo-de-streaming-radiodifusi%C3%B3n.jpg?s=640x640&k=20&c=78ZtWinSBpwJg--mQ2gjnksdrS75TxqrobRYzghq_KY="
+          />
+          <p>Explicación y práctica</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><a href="index.html">← Volver al inicio</a></div>
+    </footer>
+
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">✕</button>
+        <div class="video-wrapper" id="videoWrapper"></div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
 </html>
